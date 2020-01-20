@@ -1,0 +1,43 @@
+.categories-wrapper{
+  background-color: $dark-purple;
+  .categories-container {
+    padding: 10vw;
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .categories-header {
+      h1 {
+        color: $white;
+      }
+      h3 {
+        color: $a-gray;
+      }
+    }
+    .categories-cards {
+      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+      .categories-card {
+        background: $a-gray;
+        height: 100px;
+        width: 20vw;
+        margin: 0 3vw;
+        border: $a-gray solid 3px;
+        border-radius: 5px;
+        color: $gray-darker;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .card-title {
+          font-size: 20px;
+        }
+        .card-content {
+          color: $pink;
+          font-size: 30px
+        }
+      }
+    }
+  }
+}

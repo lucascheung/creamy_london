@@ -1,0 +1,47 @@
+.intro-wrapper {
+  padding: 15vh 10vw;
+  max-width: 100%;
+  background-color: $dark-purple;
+  color: #e2e2e2;
+  text-align: center;
+  border-bottom: 3px solid $tuscan;
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.about-wrapper {
+  max-width: 100%;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #D5D5D5;
+  border-top: 6px solid $plum-purple;
+  .about-header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i2-prod.mirror.co.uk/incoming/article10268400.ece/ALTERNATES/s1200b/Welsh-businessman-reveals-how-he-and-his-wife-spend-their-weekends-travelling-to-sex-parties.jpg);
+    background-size: 70vw !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-color: $background-gray;
+    font-size: 25px;
+    text-align: right;
+    height: 500px;
+    padding: 200px 100px 0 0;
+    margin:0;
+  }
+  .about-container {
+    display:flex;
+    height: 500px;
+    padding: 0 10vw;
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        color: $gray-darker;
+      }
+    }
+  }
+}

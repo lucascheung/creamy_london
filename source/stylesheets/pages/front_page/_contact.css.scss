@@ -1,0 +1,43 @@
+.contact-wrapper {
+  color: $white;
+  background-color: $a-gray-darker;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin:0;
+  .contact-photo {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(http://www.itchysilk.com/wp-content/uploads/2018/04/the-sun-in-my-morning-1.jpg);
+    height:70ch;
+    margin:0;
+  }
+  .contact-container {
+    padding: 50px 0;
+    h1 {
+      color: $white;
+    }
+    .contact-form {
+      padding: 0 15vw;
+      input, textarea {
+        background-color: $white;
+      }
+      .btn-send {
+        width: 200px;
+        height: 50px;
+        background-color: $pink;
+        color: #fcf7f3;
+        border-radius: 3px;
+        text-decoration: none;
+        margin-top: 30px;
+        box-shadow: 0;
+        border: none;
+        &:hover {
+          background-color: #c90269;
+        }
+      }
+    }
+  }
+}

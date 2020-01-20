@@ -1,0 +1,30 @@
+.service-wrapper {
+  background-color: $a-gray;
+  margin:0;
+  .service-header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(https://img.huffingtonpost.com/asset/59cea419180000f507c9d9c4.jpeg?cache=ST3BPFyq1N&ops=scalefit_720_noupscale);
+    background-size: 75vw !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    font-size: 25px;
+    text-align: left;
+    height: 500px;
+    padding: 200px 0 0 100px;
+    color: $white;
+    margin:0;
+  }
+  .service-container {
+    text-align: left;
+    height: 500px;
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .service-content {
+      p {
+        color: $gray-darker;
+      }
+    }
+  }
+}

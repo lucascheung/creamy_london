@@ -1,0 +1,83 @@
+.banner {
+  position: relative;
+  height: 100vh;
+  width:100vw;
+  max-width: 100%;
+  background-color: $background-gray;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin:0;
+}
+
+
+.banner-video {
+  position: absolute;
+  overflow:hidden;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  video {
+    width: 100vw;
+  }
+  #banner-video {
+    width: 100vw;
+    max-width:100%;
+    filter: brightness(80%);
+    margin: 0;
+  }
+}
+.banner-content {
+  position: absolute;
+  top:100px;
+  left:0;
+  right:0;
+  bottom:0;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: left;
+  .tagline-box {
+    width: 50vw;
+    // height: 45vh;
+    margin: 5vh 5vw;
+    padding: 100px 0 0 0;
+    // display: flex;
+    .tagline {
+      margin: auto 0;
+      // display: flex;
+      justify-content: center;
+      h1 {
+        text-align:left;
+        font-size: 6vh;
+        font-family: 'Homemade Apple', cursive;
+        margin: 0;
+        color: $pink;
+      }
+      p {
+        padding: 10px 0;
+        color: $gray-darker;
+      }
+    }
+  }
+  .banner-btn{
+    padding: 70px 5vw;
+    .main-large-btn {
+      border-radius: 4px;
+      background-color: $pink;
+      color: #f7f7f7;
+      text-decoration: none;
+      font-weight: bolder;
+      padding: 18px 50px;
+      transition: 0.2s ease all;
+      &:hover {
+        background-color: #c90269;
+      }
+    }
+  }
+}
+
