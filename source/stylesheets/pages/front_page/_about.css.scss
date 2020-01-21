@@ -19,17 +19,20 @@
   background-color: #D5D5D5;
   border-top: 6px solid $plum-purple;
   .about-header {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i2-prod.mirror.co.uk/incoming/article10268400.ece/ALTERNATES/s1200b/Welsh-businessman-reveals-how-he-and-his-wife-spend-their-weekends-travelling-to-sex-parties.jpg);
-    background-size: 70vw !important;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1522264334183-dc22c2332a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+    background-size: 50vw !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left;
     background-color: $background-gray;
     font-size: 25px;
-    text-align: right;
+    text-align: center;
     height: 500px;
     padding: 200px 100px 0 0;
     margin:0;
+    display: flex;
+    justify-content: center;
+
   }
   .about-container {
     display:flex;
