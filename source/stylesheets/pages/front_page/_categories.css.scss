@@ -1,0 +1,32 @@
+.categories-wrapper {
+    // height: 60vh;
+    background: $a-gray;
+    color: $a-gray-darker;
+    .categories-container {
+        margin: 0px auto;
+        padding: 80px 0;
+        width: 80vw;
+        text-align: center;
+        .categories-header {
+            padding: 0 0 50px 0;
+        }
+        .categories-cards {
+            margin: 0 auto;
+            justify-content: center;
+            display:flex;
+            flex-wrap: wrap;
+            width: 60vw;
+            font-size: 1.5em;
+            .categories-card {
+                font-weight: bolder;
+                display: flex;
+                align-items: center;
+                border-radius: 5px;
+                padding: 20px 40px;
+                margin: 10px;
+                background: $pink;
+                color: $a-gray;
+            }
+        }
+    }
+}
