@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(http://www.itchysilk.com/wp-content/uploads/2018/04/the-sun-in-my-morning-1.jpg);
-    height:70ch;
+    height:80vh;
     margin:0;
   }
   .contact-container {
@@ -21,8 +21,11 @@
     }
     .contact-form {
       padding: 0 15vw;
-      input, textarea {
+      input, textarea, select {
         background-color: $white;
+      }
+      textarea {
+        height: 150px;
       }
       .btn-send {
         width: 200px;

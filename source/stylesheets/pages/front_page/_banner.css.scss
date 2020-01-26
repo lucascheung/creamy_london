@@ -27,11 +27,34 @@
   img {
     width: 100vw;
   }
-  #banner-video {
+}
+
+.banner-video {
+  position: absolute;
+  overflow:hidden;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  .desktop {
+    @media screen and (max-width: 828px) {
+      display: none;
+    }
+  }
+  .mobile {
+    @media screen and (min-width: 828px) {
+      display: none;
+    }
+    filter: blur(4px) brightness(40%);
+    height: 100vh;
+    width: unset;
+  }
+  video {
     width: 100vw;
-    max-width:100%;
-    filter: brightness(80%);
-    margin: 0;
+  }
+  img {
+    width: 100vw;
   }
 }
 .banner-content {
@@ -46,6 +69,9 @@
   justify-content: left;
   .tagline-box {
     width: 50vw;
+    @media screen and (max-width: 828px) {
+      width: 90vw;
+    }
     // height: 45vh;
     margin: 5vh 5vw;
     padding: 100px 0 0 0;
@@ -60,10 +86,16 @@
         font-family: 'Homemade Apple', cursive;
         margin: 0;
         color: $pink;
+        @media screen and (max-width: 828px) {
+          font-size: 20px;
+        }
       }
       p {
         padding: 10px 0;
         color: $gray-darker;
+        @media screen and (max-width: 828px) {
+          color: $white;
+        }
       }
     }
   }
@@ -75,8 +107,9 @@
       color: #f7f7f7;
       text-decoration: none;
       font-weight: bolder;
-      padding: 18px 50px;
+      padding: 18px 60px;
       transition: 0.2s ease all;
+      font-weight: bolder;
       &:hover {
         background-color: #c90269;
       }

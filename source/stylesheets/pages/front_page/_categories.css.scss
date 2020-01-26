@@ -16,6 +16,9 @@
             display:flex;
             flex-wrap: wrap;
             width: 60vw;
+            @media screen and (max-width: 828px) {
+                width: 80vw;
+            }
             font-size: 1.5em;
             .categories-card {
                 font-weight: bolder;
@@ -24,8 +27,13 @@
                 border-radius: 5px;
                 padding: 20px 40px;
                 margin: 10px;
-                background: $pink;
+                background: $dark-purple;
                 color: $a-gray;
+                @media screen and (max-width: 828px) {
+                    font-size: 14px;  
+                    padding: 5px 10px; 
+                    margin: 5px;    
+                }
             }
         }
     }
