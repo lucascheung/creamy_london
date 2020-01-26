@@ -46,7 +46,7 @@
     @media screen and (min-width: 828px) {
       display: none;
     }
-    filter: blur(4px) brightness(40%);
+    filter: blur(2px) brightness(40%);
     height: 100vh;
     width: unset;
   }
@@ -59,6 +59,9 @@
 }
 .banner-content {
   position: absolute;
+  @media screen and (max-width: 828px) {
+    top: 0;
+  }
   top:100px;
   left:0;
   right:0;
@@ -71,6 +74,14 @@
     width: 50vw;
     @media screen and (max-width: 828px) {
       width: 90vw;
+    }
+    .mobile {
+      @media screen and (min-width: 828px) {
+        display: none;
+      }
+      width: 150px;
+      padding: 50px 0;
+      opacity: 0.7;
     }
     // height: 45vh;
     margin: 5vh 5vw;
